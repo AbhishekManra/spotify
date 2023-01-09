@@ -1,0 +1,311 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    font-family: 'Montserrat' , 'sans-serif';
+    background-color: #121212;
+}
+
+ul{
+    padding-left: 10px;
+}
+
+ul li {
+    padding-right: 19px;
+}
+/* our side bar */
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 196px;
+    padding: 24px;
+    background-color: #000000;
+}
+
+/* our image */
+#spotify_logo{
+    width: 130px;
+}
+.sidebar .navigation ul{
+    list-style-type: none;
+    margin-top: 20px; /*to create space between the logo and the side bar buttons */
+    
+}
+
+.sidebar .navigation ul li{
+    padding: 10px 0;
+}
+
+.sidebar .navigation ul li a{
+     color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+ 
+.sidebar .navigation ul li .fa{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.sidebar .navigation ul li .fa{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.sidebar .navigation ul li a:hover,
+.sidebar .navigation ul li a:active,
+.sidebar .navigation ul li a:focus {
+color: #ffffff;
+}
+
+.sidebar .navigation ul li a:hover .fa,
+.sidebar .navigation ul li a:active .fa,
+.sidebar .navigation ul li a:focus .fa {
+color: #b3b3b3;
+}
+
+.sidebar .navigation ul li a:hover .fa:hover,
+.sidebar .navigation ul li a:active .fa:active,
+.sidebar .navigation ul li a:focus .fa:focus {
+color: #ffffff;
+}
+
+.policies{
+    position: absolute;
+    bottom: 100px;
+}
+
+.policies ul{
+    list-style-type: none;
+}
+
+.policies ul li{
+    padding: 5px;
+}
+
+.policies ul li a{
+    text-decoration: none;
+    color: #b3b3b3;
+    font-weight: 500;
+    font-size: 10px;
+}
+.sidebar .policies ul li a:hover,
+.sidebar .policies ul li a:active,
+.sidebar .policies ul li a:focus {
+  text-decoration: underline;
+}
+
+.main-content{
+    margin-left: 240px;
+    margin-bottom: 100px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #101010;
+    padding: 14px 30px;
+}
+.topbar .arrow-button button{
+    color: #7a7a7a;
+    cursor: not-allowed;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    border: 0px;
+    background-color: #090909;
+    margin-bottom: 10px;
+}
+.topbar .navbar{
+    display: flex;
+    align-items: center;
+}
+
+.topbar .navbar ul{
+    list-style-type: none;
+}
+
+.topbar .navbar ul li{
+    display: inline-block;
+    margin: 0px 8px;
+    width: 86px;
+}
+
+.topbar .navbar ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #b3b3b3;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.topbar .navbar ul li a:hover,
+.topbar .navbar ul li a:active,
+.topbar .navbar ul li a:focus{
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.divide{
+    color: white;
+    font-size: 26px;
+    margin: 0px 20px;
+    width: auto;
+    text-align: center;
+}
+
+.topbar .navbar button{
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-left: 20px;
+}
+
+.topbar .navbar button:hover,
+.topbar .navbar button:active,
+.topbar .navbar button:focus{
+    background-color: #f2f2f2;
+}
+
+.preview{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(to right,#ae2896,#509bf5);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.preview h6{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px; 
+    margin-bottom: 10px;
+}
+.preview .text p{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.preview button{
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 40px;
+    border: none;
+    font-size: 16px;
+    padding: 13px 30px;
+    cursor: pointer;
+}
+
+.playlist{
+    padding: 20px 40px;
+}
+.playlist .info .heading h2{
+    color: #ffffff;
+    display: inline-block;
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.playlist .info .heading h2:hover{
+    text-decoration: underline;
+}
+
+.playlist .list{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.playlist .list .item{
+    min-width: 140px; /* so that it will not grow smaller than 140px even when the screen resolution shrinks*/
+    width: 178px;
+    padding: 15px;
+    background-color: #181818;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.playlist .list .item:hover{
+    background-color: #252525;
+}
+
+.playlist .list .item img{
+    width: 100%; /* width: 100%; will make the element as wide as the parent container. Extra spacing will be added to the element's size without regards to the parent. */
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.playlist .list .item .play{
+    position: relative;
+}
+
+.playlist .list .item .play .fa{
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    padding: 18px;
+    background-color: #1db954;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+
+.playlist .list .item:hover .play .fa{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.playlist .list .item h4{
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.playlist .list .item p{
+    color: #989898;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.playlist hr{
+    margin: 70px 0px 0px;
+    border-color: #636363;
+}
+
+.playlist .info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.playlist .info .showall h4{
+    color: #989898;
+    font-size: 11px;
+    font-weight: 900;
+    padding-top: 8px;
+}
+
+.playlist .info .showall h4:hover{
+    text-decoration: underline;
+}
