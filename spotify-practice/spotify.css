@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat',sans-serif;
+    background-color: #121212;
+}
+
+.sidebar{
+    position: fixed  ;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    padding: 24px;
+    width: 196px;
+}
+
+.sidebar .logo img{
+    width: 128px;
+}
+
+.sidebar .options{
+    
+}
+
+.sidebar .options ul{
+    list-style-type: none;
+    position: relative;
+    margin-top: 20px;
+    right: 20px;
+}
+
+.sidebar .options ul li{
+    padding: 10px 0;
+    width: 127px;
+}
+
+.sidebar .options ul li a{
+    color: #b3b3b3;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sidebar .options ul li a .fa{
+    font-size: 20px;
+    margin-right: 10px; /*break point*/
+}
+
+.policies{
+    position: absolute;
+    bottom: 100px; 
+  
+}
+
+.policies ul{
+    list-style-type: none;
+}
+
+.policies ul li{
+    padding: 5px;
+}
+
+.policies ul li a{
+    font-size: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #b3b3b3;
+}
+
+/* navbar */
+
+.main-cont{
+    margin-left: 240px;
+    margin-bottom: 100px;
+}
+.main-cont .topbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #101010;
+    padding: 14px 30px;
+}
+.main-cont .topbar .arrowbtn button{
+    color: #7a7a7a;
+    background-color: #090909;
+    cursor: not-allowed;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    border: 0px;
+    margin-bottom: 10px;
+}
+
+/* .main-cont .topbar .nav{
+    display: flex;
+    align-items: center;
+} */
+
+.main-cont .topbar .nav ul{
+    list-style-type: none;
+}
+
+.main-cont .topbar .nav ul li{
+    display: inline-block;
+    width: 86px;
+}
+
+.main-cont .topbar .nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #b3b3b3;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.divide{
+    color: #b3b3b3;
+    max-width:20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.main-cont .topbar .nav button{
+    border-radius: 40px;
+    background-color: #ffffff;
+    color: #000000;
+    margin-left: 20px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+}
