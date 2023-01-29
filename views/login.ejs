@@ -40,35 +40,40 @@
                                                 </div>
                                             </ul>
                                             <div data-testid="login-form">
-                                                <div class="Group-u9bcx5-0 UXQuB sc-crHmcD ezWBvp">
-                                                    <div class="LabelGroup-sc-1ibddrg-0 dUvQaU">
-                                                        <label for="login-username" class="Label-sc-1c0cv3r-0 jhxAUN">Email address or username</label>
-                                                    </div>
-                                                    <input aria-invalid="false" id="login-username" type="text" placeholder="Email address or username" data-testid="login-username" autocapitalize="off" autocomplete="username" spellcheck="false" autocorrect="off" aria-describedby="username-error" class="Input-sc-1gbx9xe-0 iFfIqr" name="username">
-                                                </div>
-                                                <div class="Group-u9bcx5-0 UXQuB sc-crHmcD ezWBvp">
-                                                    <div class="LabelGroup-sc-1ibddrg-0 dUvQaU">
-                                                        <label for="login-password" class="Label-sc-1c0cv3r-0 jhxAUN">Password</label>
-                                                    </div>
-                                                    <input aria-invalid="false" id="login-password" type="password" placeholder="Password" data-testid="login-password" autocomplete="current-password" spellcheck="false" autocorrect="off" aria-describedby="password-error" class="Input-sc-1gbx9xe-0 iFfIqr" name="password">
-                                                </div>
-                                                <a id="reset-password-link" data-testid="reset-password-link" href="#" class="Link-k8gsk-0 dvVOBw">Forgot your password?</a>
-                                                <div class="sc-egiyK ihTAUv">
+                                                <form action="/login" method="post">
+
                                                     <div class="Group-u9bcx5-0 UXQuB sc-crHmcD ezWBvp">
-                                                        <div class="Checkbox-svpvf6-0 gJoDne">
-                                                            <input type="checkbox" id="login-remember" name="remember" data-testid="login-remember" class="VisuallyHidden-sc-17bibe8-0 gbnvEH" checked="">
-                                                            <label for="login-remember" class="Label-cpoq-0 iXswkd">
-                                                                <span class="Indicator-sc-1airx73-0 kHTWAk"></span>
-                                                                <span class="TextForLabel-sc-1jqya9m-0 bcyFQV">
-                                                                    <p class="Type__TypeElement-goli3j-0 VNztd sc-jrQzAO fSGOEk">Remember me</p>
-                                                                </span>
+                                                        <div class="LabelGroup-sc-1ibddrg-0 dUvQaU">
+                                                            <label for="login-username" class="Label-sc-1c0cv3r-0 jhxAUN">Email address or username</label>
+                                                        </div>
+                                                        <input aria-invalid="false" id="login-username" type="text" placeholder="Email address or username" data-testid="login-username" autocapitalize="off" autocomplete="username" spellcheck="false" autocorrect="off" aria-describedby="username-error" class="Input-sc-1gbx9xe-0 iFfIqr" name="username">
+                                                    </div>
+                                                    <div class="Group-u9bcx5-0 UXQuB sc-crHmcD ezWBvp">
+                                                        <div class="LabelGroup-sc-1ibddrg-0 dUvQaU">
+                                                            <label for="login-password" class="Label-sc-1c0cv3r-0 jhxAUN">Password</label>
+                                                        </div>
+                                                        <input aria-invalid="false" id="login-password" type="password" placeholder="Password" data-testid="login-password" autocomplete="current-password" spellcheck="false" autocorrect="off" aria-describedby="password-error" class="Input-sc-1gbx9xe-0 iFfIqr" name="password">
+                                                    </div>
+                                                    <a id="reset-password-link" data-testid="reset-password-link" href="#" class="Link-k8gsk-0 dvVOBw">Forgot your password?</a>
+                                                    <div class="sc-egiyK ihTAUv">
+                                                        <div class="Group-u9bcx5-0 UXQuB sc-crHmcD ezWBvp">
+                                                            <div class="Checkbox-svpvf6-0 gJoDne">
+                                                                <input type="checkbox" id="login-remember" name="remember" data-testid="login-remember" class="VisuallyHidden-sc-17bibe8-0 gbnvEH" checked="">
+                                                                <label for="login-remember" class="Label-cpoq-0 iXswkd">
+                                                                    <span class="Indicator-sc-1airx73-0 kHTWAk"></span>
+                                                                    <span class="TextForLabel-sc-1jqya9m-0 bcyFQV">
+                                                                        <p class="Type__TypeElement-goli3j-0 VNztd sc-jrQzAO fSGOEk">Remember me</p>
+                                                                    </span>
                                                             </label>
                                                         </div>
                                                     </div>
                                                     <div class="sc-bqiRlB gZUGQH">
-                                                        <button id="login-button" data-testid="login-button" class="Button-qlcn5g-0 frUdWl"><div class="ButtonInner-sc-14ud5tc-0 lbsIMA encore-bright-accent-set"><span class="Type__TypeElement-goli3j-0 dmuHFl sc-hKwDye fXzRSj">Log In</span></div><div class="ButtonFocus-sc-2hq6ey-0 eiuQDg"></div></button></div></div></div><hr role="presentation" class="sc-eCImPb gjuJVb"><div id="sign-up-section" data-testid="signup-section"><h2 class="Type__TypeElement-goli3j-0 izDpgk sc-pVTFL kPXrkQ">Don't have an account?</h2><button id="sign-up-link" data-testid="signup-btn-link" class="Button-y0gtbx-0 hpTULc"><span class="Type__TypeElement-goli3j-0 cWkmRE sc-hKwDye fXzRSj">Sign up for Spotify</span></button></div></div></div></div></div></div>
-
+                                                        <button id="login-button" data-testid="login-button" class="Button-qlcn5g-0 frUdWl" name="login-button"><div class="ButtonInner-sc-14ud5tc-0 lbsIMA encore-bright-accent-set"><span class="Type__TypeElement-goli3j-0 dmuHFl sc-hKwDye fXzRSj">Log In</span></div><div class="ButtonFocus-sc-2hq6ey-0 eiuQDg"></div></button></div></div></div><hr role="presentation" class="sc-eCImPb gjuJVb"><div id="sign-up-section" data-testid="signup-section"><h2 class="Type__TypeElement-goli3j-0 izDpgk sc-pVTFL kPXrkQ">Don't have an account?</h2>
+                                                        </form>
+                                                            <a href="/register">
+                                                                <button id="sign-up-link" data-testid="signup-btn-link" class="Button-y0gtbx-0 hpTULc"><span class="Type__TypeElement-goli3j-0 cWkmRE sc-hKwDye fXzRSj">Sign up for Spotify</span></button></div></div></div></div></div></div>
+                                                            </a>
                                                         </body>
-    
-</body>
-</html>
+                                                        
+                                                    </body>
+                                                    </html>

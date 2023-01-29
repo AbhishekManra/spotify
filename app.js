@@ -26,7 +26,8 @@ app.use(session({
 app.use(passport.initialize()); // initalizing passport
 app.use(passport.session()); // launching the session
 mongoose.set("strictQuery", false);
-mongoose.connect('mongodb://127.0.0.1:27017/AuthurizeDB');
+// mongoose.connect('mongodb://127.0.0.1:27017/AuthurizeDB');
+mongoose.connect(process.env.ATLAS);
 
 const userSchema = new mongoose.Schema({
     email : String,

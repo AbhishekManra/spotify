@@ -309,3 +309,11 @@ color: #ffffff;
 .playlist .info .showall h4:hover{
     text-decoration: underline;
 }
+#main{
+    display: none;
+}
+
+#logme{
+    text-decoration: none;
+    color: #000000;
+}
